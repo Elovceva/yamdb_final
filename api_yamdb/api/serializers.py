@@ -1,12 +1,8 @@
 from django.db.models import Avg
-
 from rest_framework import serializers
 from rest_framework.relations import SlugRelatedField
 from rest_framework.validators import UniqueValidator
-
-
-from reviews.models import (
-    User, Title, Genre, Category, Comments, Review)
+from reviews.models import Category, Comments, Genre, Review, Title, User
 
 
 class SignUpSerializer(serializers.ModelSerializer):

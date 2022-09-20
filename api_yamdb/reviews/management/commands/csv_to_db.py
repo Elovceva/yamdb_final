@@ -3,10 +3,10 @@ import os
 import sys
 
 from django.core.management import BaseCommand
+from reviews.models import (Category, Comments, Genre, GenreTitle, Review,
+                            Title, User)
 
 from api_yamdb.settings import CSV_DIR
-from reviews.models import (User, Category, Genre,
-                            Title, Review, Comments, GenreTitle)
 
 FILENAMES_AND_MODELS = {
     'users': User,

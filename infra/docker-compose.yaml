@@ -6,9 +6,9 @@ services:
     volumes:
       - /var/lib/postgresql/data/
     env_file:
-      - ./.env.example
+      - ./.env
   web:
-    build: ../api_yamdb/
+    image: helen2022/api_yamdb:latest
     restart: always
     volumes:
       - static_value:/app/static/
