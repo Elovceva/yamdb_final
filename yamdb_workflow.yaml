@@ -28,7 +28,6 @@ jobs:
         # запуск проверки проекта по flake8
         python -m flake8
         # запустить pytest
-        cd yamdb_final
         pytest
 
   deploy:
